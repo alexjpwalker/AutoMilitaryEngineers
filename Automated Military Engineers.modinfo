@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="BC7AF1E3-2A32-43E2-9C3E-9695C54E7C16" version="2">
+  <Properties>
+    <Name>Automated Military Engineers</Name>
+    <Description>Military Engineers have new action buttons that will put them in automation mode.</Description>
+    <Teaser>Military Engineer automation code for human players.</Teaser>
+    <Authors>CaptainCustard</Authors>
+    <SpecialThanks>Adriaman,MadManCam</SpecialThanks>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+	<AffectsSavedGames>0</AffectsSavedGames>
+	<SupportsSinglePlayer>1</SupportsSinglePlayer>
+	<SupportsMultiplayer>1</SupportsMultiplayer>
+	<SupportsHotSeat>1</SupportsHotSeat>
+	<SupportsPlayByCloud>1</SupportsPlayByCloud>
+	<Stability>Stable</Stability>
+  </Properties>
+  <InGameActions>
+    <UpdateText id="AutoMilitaryEngineers_Text">
+      <Properties>
+        <LoadOrder>8500</LoadOrder>
+      </Properties>
+      <File>Text/AutoMilitaryEngineers_Text_fr_FR.xml</File>
+      <File priority="2">Text/en_US/AutoMilitaryEngineers_Text.xml</File>
+    </UpdateText>
+    <AddUserInterfaces id="AutoMilitaryEngineers_Scripts">
+      <Properties>
+        <Context>InGame</Context>
+        <LoadOrder>9000</LoadOrder>
+      </Properties>
+      <File>Scripts/AutoMilitaryEngineers.xml</File>
+      <File>UI/AutoMilitaryEngineers_Minibar.xml</File>
+    </AddUserInterfaces>
+    <ImportFiles id="AutoMilitaryEngineers_Import">
+      <Properties>
+        <LoadOrder>9950</LoadOrder>
+      </Properties>
+      <File>Textures/Automate_green_38.dds</File>
+      <File>Textures/StopAutomate_red_38.dds</File>
+      <File>Textures/CNO_AutoMilitaryEngineers_Logo_Small.dds</File>
+      <File>Textures/CNO_AutoMilitaryEngineers_Logo_Tiny.dds</File>
+    </ImportFiles>
+    <AddGameplayScripts id="AutoMilitaryEngineers_GameScripts">
+      <Properties>
+        <LoadOrder>10000</LoadOrder>
+      </Properties>
+      <File>Scripts/AutoMilitaryEngineers_GameplayScript.lua</File>
+    </AddGameplayScripts>
+  </InGameActions>
+  <Files>
+    <File>LICENSE</File>
+    <File>Scripts/AutoMilitaryEngineers.lua</File>
+    <File>Scripts/AutoMilitaryEngineers.xml</File>
+    <File>Scripts/AutoMilitaryEngineers_GameplayScript.lua</File>
+    <File>Textures/Automate_green_38.dds</File>
+    <File>Textures/CNO_AutoMilitaryEngineers_Logo_Small.dds</File>
+    <File>Textures/CNO_AutoMilitaryEngineers_Logo_Tiny.dds</File>
+    <File>Textures/StopAutomate_red_38.dds</File>
+    <File>Text/AutoMilitaryEngineers_Text_fr_FR.xml</File>
+    <File>Text/en_US/AutoMilitaryEngineers_Text.xml</File>
+    <File>UI/AutoMilitaryEngineers_Minibar.lua</File>
+    <File>UI/AutoMilitaryEngineers_Minibar.xml</File>
+    <File>UI/AutoMilitaryEngineers_SettingsPanel.lua</File>
+    <File>UI/AutoMilitaryEngineers_SettingsPanel.xml</File>
+  </Files>
+</Mod>

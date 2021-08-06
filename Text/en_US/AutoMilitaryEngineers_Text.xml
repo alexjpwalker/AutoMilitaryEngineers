@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<LocalizedText>
+
+		<Row Tag="LOC_CNO_AutoMilitaryEngineers_MINIBAR_TITLE" Language="en_US">
+			<Text>Automated Military Engineers</Text>
+		</Row>
+		<Row Tag="LOC_CNO_AutoMilitaryEngineers_AUTOMATE_TOOLTIP" Language="en_US">
+			<Text>Automate</Text>
+		</Row>
+		<Row Tag="LOC_CNO_AutoMilitaryEngineers_STOP_AUTOMATE_TOOLTIP" Language="en_US">
+			<Text>Stop Automation</Text>
+		</Row>
+
+		<Row Tag="LOC_CNO_AutoMilitaryEngineers_AUTOMATE_ALL_TOOLTIP" Language="en_US">
+			<Text>Automate all Military Engineers</Text>
+		</Row>
+		<Row Tag="LOC_CNO_AutoMilitaryEngineers_STOP_AUTOMATE_ALL_TOOLTIP" Language="en_US">
+			<Text>Stop Automation for all Military Engineers</Text>
+		</Row>
+
+	</LocalizedText>
+</GameData>

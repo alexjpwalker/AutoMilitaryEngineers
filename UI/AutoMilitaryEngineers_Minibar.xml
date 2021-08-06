@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Context Name="CNO_AutomatedMilitaryEngineers_Minibar">
+
+  <Container	Size="420,120" ID="CNO_AutomatedMilitaryEngineers_Minibar_Container" Anchor="R,T"	AnchorSide="I,I"	Offset="0,0" ConsumeMouse="1">
+
+    <AlphaAnim  Size="parent,parent"	ID="CNO_AutoMilitaryEngineers_Minibar_Alpha"       AlphaBegin="0" AlphaEnd="1" Speed="2"   Function="OutSine" Cycle="Once" >
+      <SlideAnim	Size="parent,parent"	ID="CNO_AutoMilitaryEngineers_Minibar_Pause"		Begin="0,0" End="600,0"	Function="Root" Speed="4"	Cycle="Once"	Stopped="1"/>
+      <SlideAnim	Size="parent,parent"	ID="CNO_AutoMilitaryEngineers_Minibar_CollapseAnim"	Begin="0,0" End="600,0"	Function="OutQuint" FunctionPower="1" Speed="2"		Cycle="Once"	Stopped="1">
+        <SlideAnim	Size="parent,parent"	ID="CNO_AutoMilitaryEngineers_Minibar_ExpandAnim"	Begin="0,0" End="-600,0" Function="OutQuint" FunctionPower="3" Speed="2"		Cycle="Once"	Stopped="1">
+
+          <!--<Container Size="parent,parent+5" ID="TitleStack_MouseOver_Container" Anchor="L,T" Offset="-10,-50" ConsumeMouse="1"/> -->
+
+          <!--Unit Portrait -->
+          <Image ID="UnitIcon"  Texture="UnitPortraits95_1" Size="56,56" Anchor="L,T" Offset="-60,60" Icon="ICON_UNIT_MILITARY_ENGINEER_PORTRAIT" Color="255,255,255,175" />
+
+
+          <Box ID="CNO_AutomatedMilitaryEngineers_Main_Container" Style="ShellBGBox" Size="375,51" Anchor="L,T" Offset="10,60"  Color="9,44,72,150">
+            <Stack	ID="Vertical_Stack"  Anchor="L,T"	Offset="0,0"	StackGrowth="Down" Padding="2">
+              <Container	Size="parent,parent" ID="MainBar_Container" Anchor="L,C"	Offset="0,0" ConsumeMouse="0">
+                <Grid Style="ShellHeaderButtonGrid" Size="parent+40,parent" Offset="0,0" />
+                <Stack	ID="Horizontal_Stack" Anchor="L,B"	Offset="6,-2"		StackGrowth="Right" Padding="2">
+
+                  <Container	Size="45,parent" ID="AutomateButton_Container" Anchor="L,C"	Offset="0,0" ConsumeMouse="0">
+
+                    <Button ID="AutomateButton" Anchor="L,C" Size="44,54" Texture="UnitPanel_ActionButton" ToolTip="LOC_CNO_AutoMilitaryEngineers_AUTOMATE_TOOLTIP" Hidden="0">
+                      <Image	ID="AutomateButtonIcon"		Anchor="C,C" Offset="0,-2" Size="38,38"  Texture="Automate_green_38.dds"/>
+                    </Button>
+                    <Button ID="StopAutomateButton" Anchor="L,C" Size="44,54" Texture="UnitPanel_ActionButton" ToolTip="LOC_CNO_AutoMilitaryEngineers_STOP_AUTOMATE_TOOLTIP" Hidden="1">
+                      <Image	ID="StopAutomateButtonIcon"		Anchor="C,C" Offset="0,-2" Size="38,38"  Texture="StopAutomate_red_38.dds"/>
+                    </Button>
+                  </Container>
+
+                  <Container	Size="50,parent" ID="AutomateAllButton_Container" Anchor="L,C"	Offset="0,0" ConsumeMouse="0">
+
+                    <Button ID="AutomateAllButton" Anchor="L,C" Size="44,54" Texture="UnitPanel_ActionButton" ToolTip="LOC_CNO_AutoMilitaryEngineers_AUTOMATE_ALL_TOOLTIP" Hidden="0">
+                      <Image	ID="AutomateAllButtonIcon"		Anchor="C,C" Offset="0,-2" Size="38,38"  Texture="Automate_green_38.dds"/>
+                    </Button>
+                    <Button ID="StopAutomateAllButton" Anchor="L,C" Size="44,54" Texture="UnitPanel_ActionButton" ToolTip="LOC_CNO_AutoMilitaryEngineers_STOP_AUTOMATE_ALL_TOOLTIP" Hidden="1">
+                      <Image	ID="StopAutomateAllButtonIcon"		Anchor="C,C" Offset="0,-2" Size="38,38"  Texture="StopAutomate_red_38.dds"/>
+                    </Button>
+
+                  </Container>
+
+                </Stack>
+
+                <Container	Size="250,51" ID="Status_Container" Anchor="R,C"	Offset="0,0" AnchorSide="I,I" ConsumeMouse="0">
+                  <Label ID="UnitStatus" Style="FontFlair14" Anchor="L,C" Offset="0,0" String=""/>
+                  <Label ID="UnitStatusTop" Style="FontFlair14" Anchor="L,T" Offset="0,11" String=""/>
+                  <Label ID="UnitStatusBottom" Style="FontFlair14" Anchor="L,B" Offset="0,12" String=""/>
+                </Container>
+
+              </Container>
+            </Stack>
+          </Box>
+
+          <!-- Title Stack-->
+          <Container	Size="parent,60" ID="TitleStack_Container" Anchor="L,T"	Offset="2,10" >
+            <AlphaAnim  Size="parent,parent"	ID="CNO_AutoMilitaryEngineers_Minibar_TitleStack_Alpha"       AlphaBegin="0" AlphaEnd="1" Speed="2"   Function="OutSine" Cycle="Once" >
+              <Stack	ID="TitleStack" Anchor="L,T"	Offset="6,0"		StackGrowth="Right" Padding="2" Hidden="1">
+
+                <Container	Size="225,50" ID="Label_Container" Anchor="L,T"	Offset="0,0" ConsumeMouse="0">
+                  <!--<Label ID="MinibarTitle" Style="ShellHeader" Anchor="C,C" Offset="0,0" String="LOC_CNO_AutoMilitaryEngineers_MINIBAR_TITLE"/>
+                  -->
+                  <Image ID="Logo_tiny"		Anchor="L,C" Texture="CNO_AutoMilitaryEngineers_Logo_Tiny.dds" StretchMode="Auto"/>
+                </Container>
+
+              </Stack>
+            </AlphaAnim>
+          </Container>
+
+
+        </SlideAnim>
+      </SlideAnim>
+    </AlphaAnim>
+
+  </Container>
+
+</Context>
