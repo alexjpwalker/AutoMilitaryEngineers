@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------------------------------
-local debug: boolean = true; -- Set to true to enable basic debug messages in the Lua.log
+local debug: boolean = false; -- Set to true to enable basic debug messages in the Lua.log
 local debug_GameInfo: boolean = false; -- Set to true to enable printing all of the routes, unit commands, unit ops loaded into mod.
-local debug_AllActions: boolean = true; -- Set to true to enable VERY VERBOSE debug messages printed to log
+local debug_AllActions: boolean = false; -- Set to true to enable VERY VERBOSE debug messages printed to log
 --------------------------------------------------------------------------------------------------------
 --[[
 AUTOMATED MILITARY ENGINEERS SCRIPT
